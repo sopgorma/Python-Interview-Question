@@ -1,0 +1,15 @@
+#defines the attribute reversed(name) as 'pal' and saves the input
+def reversed(name):
+    pal = ""
+    for char in name:
+       pal = char + pal
+    return pal 
+
+#allows user to input the given word
+name = input("Enter a word: ")
+
+#checks to see if the given word is a palindrome or not
+if reversed(name) == name: 
+    print("Yes, " + "'" + name + "'" + " is a palindrome!")
+else:
+    print("No, " + "'" + name + "'" + " is not a palindrome.")
